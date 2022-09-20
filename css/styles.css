@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    font-family: poppinslight;
+    width: auto;
+    margin: 0px auto;
+    padding: 3px;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo{
+    margin-top: 10px;
+    margin-left: 30px;  
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    color: #2c2c2c;
+    font-family: poppinsregular;
+    font-size: 15px;
+}
+
+li:hover{
+    color:red;
+}
+
+
+.CONTATO{
+    border: 2px solid #58391D;
+    border-radius: 3px;
+}
+
+
+#ContatoBotão{
+    border: 2px solid #58391D;
+    border-radius: 3px;
+}
+#slogan{
+    display: flex;
+    justify-items: baseline;
+}
+
+#botao-reservas{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 5px;
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    left: 250px;
+    top: 500px;
+
+}
+
+.ANewConcept{
+    color: #58391D;
+    margin-left: 240px;
+    font-size: 25px;
+    letter-spacing: -0.06em;
+    text-decoration-line: underline;
+    margin-top:150px;
+}
+
+.Conteúdo{
+    position: absolute;
+    width: 655px;
+    height: 159.95px;
+    margin-left: 47px;
+    top: 350px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 0.18em;
+}
+
+.pequenos-detalhes{
+    font-size: 20px;
+}
+
+.grandes-eventos{
+    font-size: 33px;
+}
+
+.img-mulher-buque{
+    position: absolute;
+    width: 800px;
+    height: 900px;
+    margin-left: 900px;
+    
+}
+
+footer{
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 1424px;
+    left:-3px;
+    top: 827px;
+    text-align: center;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.direitos-reservados{
+    font-size: 16px;
+}
+
+.copyright{
+    font-size: 14px;
+}
+
+
+

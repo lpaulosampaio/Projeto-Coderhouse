@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    font-family: poppinslight;
+    width: auto;
+    margin: 0px auto;
+    padding: 3px;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo{
+    margin-top: 10px;
+    margin-left: 30px;  
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    color: #2c2c2c;
+    font-family: poppinsregular;
+    font-size: 15px;
+}
+
+li:hover{
+    color:red;
+}
+
+.CONTATO{
+    border: 2px solid #58391D;
+    border-radius: 3px;
+}
+

@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: poppinslight;
+}
+
+#Grid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "images"
+        "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+
+header{
+    display: flex; 
+    margin-right: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo{
+    margin-top: 10px;
+    margin-left: 30px; 
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    color: #2c2c2c;
+    font-family: poppinsregular;
+    font-size: 15px;
+}
+
+li:hover{
+    color:red;
+}
+
+.GALERIA{
+    text-decoration: underline;
+}
+
+.CONTATO{
+    border: 2px solid #58391D;
+    border-radius: 3px;
+}
+
+#images{
+    margin: 40px 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.galeria__img{
+    max-height: 150px;
+    max-width: 250px;
+    margin: 10px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #d9d9d9;
+    position: absolute;
+    width: 1424px;
+    left:-3px;
+    top: 827px;
+    text-align: center;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 3px;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.direitos-reservados{
+    font-size: 16px;
+}
+
+.copyright{
+    font-size: 14px;
+}
+
+
+
+
+/*Media Query - Tela Mobile */
+@media (min-width:320px) and (max-width:480px) {
+header{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logotipo{
+    margin-top: 15px;       
+}
+li{
+    display: inline-block;
+    margin: 4px;
+    color: #2c2c2c;
+    font-family: poppinsregular;
+    font-size: 12px;
+}
+#images{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.galeria__img{ 
+    max-height: 100px;
+    max-width: 150px;}
+}
