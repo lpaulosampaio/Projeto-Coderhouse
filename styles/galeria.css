@@ -1,0 +1,7 @@
+.galeria__images {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin: 40px 150px;
+  margin-bottom: 26px; }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/main.css">
+    <link rel="stylesheet" href="./../styles/contato.css">
+    <title> CONTATO </title>
+</head>
+
+<body>
+    <div class="container"></div>
+    <heander class="menu">
+        <div class="menu__wrapper">
+            <img class="menu__logo" src="./../image/logo.svg" alt="logo">
+            <nav class="menu__navbar">
+                <a class="menu__navbar-underline" href="./../index.html">HOME</a>
+                <a href="./../pages/Eventos.html">EVENTOS</a>
+                <a href="./../pages/Galeria.html">GALERIA</a>
+                <a href="./../pages/Sobrenós.html">SOBRE NÓS</a>
+                <a class="menu__navbar-border" href="./Contato.html">CONTATO</a>
+            </nav>
+        </div>
+    </heander>
+    <hr>
+    <main>
+        <section class="banner__main contact">
+            <div class="banner__wrapper">
+                <div class="banner__location">
+                    <h1>Localização</h1>
+                    <p>Av. Alameda Casa Branca, 303 - Bela Vista</p>
+                    <p>São Paulo - São Paulo</p>
+                    <p>Telefone: 55 (11) 3434-3434</p>
+                </div>
+            </div>
+            <div class="container__form">
+                <form class="form__budget">
+                    <h1 class="budget__title">Solicitar Orçamento</h1>
+                    <label>Nome</label>
+                    <input type="text" name="Nome" id="nome">
+
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+
+                    <label>Email</label>
+                    <input type="Email" nome="Email" id="email">
+
+                    <label>Telefone</label>
+                    <input type="number" name="contato" id="phone">
+
+                    <label> Tipo de Evento</label>
+                    <select id="eventos">
+                        <option selected disabled value=""></option>
+                        <option>Aniversários</option>
+                        <option>Casamentos</option>
+                        <option>Formaturas</option>
+                        <option>Eventos Corporativos</option>
+                        <option>Outros</option>
+                    </select>
+                    <label> Qtde de Convidados</label>
+                    <select id="eventos">
+                        <option selected disabled value=""></option>
+                        <option>50-100 convidados</option>
+                        <option>101-500 convidados</option>
+                        <option>501-1.000 convidados </option>
+                        <option>1.001-2.000 convidados</option>
+                        <option>+ 2.000 convidados</option>
+                    </select>
+                    <textarea placeholder="Deixe Seu Recado" id="" cols="30" rows="8" ></textarea>
+                    <input class="btn" type="button" value="enviar">
+
+
+            </div>
+            </form>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <hr>
+        <div class="footer__icons">
+            <a href="https://www.facebook.com/"><img src="./../image/logo_facebook.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/"><img src="./../image/logo_youtube.svg" alt="youtube"></a>
+            <a href="https://www.instagram.com/"><img src="./../image/logo_instagram.svg" alt="instagram"></a>
+        </div>
+        <div class="footer__title">
+            <p class="footer__2022">2022. Direitos Reservados </p> <br>
+            <p class="footer__right"> Copyright - Casa Blancah - Espaço para Casamentos e Eventos.<br>
+                São Paulo. Site por Creative Design.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

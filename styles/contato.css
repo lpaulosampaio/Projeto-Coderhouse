@@ -1,0 +1,60 @@
+main {
+  background-image: url(./../image/contato/casal_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  main .contact {
+    align-items: center;
+    padding: 35px 0; }
+  main .banner__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main .banner__location {
+    text-align: center;
+    width: 500px;
+    height: min-content;
+    background: rgba(61, 58, 58, 0.65);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-weight: 70;
+    padding: 3rem 0; }
+    main .banner__location h1 {
+      text-transform: uppercase;
+      font-size: 30px;
+      margin-bottom: 2rem; }
+    main .banner__location p {
+      font-size: 21px; }
+  main .banner__wrapper, main .container__form {
+    width: 50%; }
+  main .container__form {
+    display: flex;
+    justify-content: center; }
+
+.form__budget {
+  background: rgba(61, 58, 58, 0.65);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  color: #FFFFFF;
+  font-weight: 70;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.8rem; }
+  .form__budget input, .form__budget select, .form__budget textarea {
+    margin-bottom: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #D9D9D9;
+    padding: 0 10px; }
+  .form__budget .btn {
+    background-color: #3D3A3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    align-self: flex-end;
+    padding: 2px 10px; }
+  .form__budget .budget__title {
+    background-color: #404040;
+    border-radius: 2px;
+    align-self: center;
+    padding: 2px 8px; }

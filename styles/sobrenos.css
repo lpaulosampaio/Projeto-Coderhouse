@@ -1,0 +1,14 @@
+.banner__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0; }
+  .banner__about p {
+    margin: 50px 0;
+    font-size: 16px; }
+  .banner__about .content__text {
+    width: 850px;
+    text-align: center; }
+  .banner__about .btn {
+    padding: 4px 5px; }
