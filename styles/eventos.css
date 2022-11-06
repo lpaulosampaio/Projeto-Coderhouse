@@ -1,2 +1,34 @@
 .event {
-  margin: 2rem 0; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 68px 0; }
+  .event .card__img {
+    margin: 25px; }
+  .event img {
+    width: 350px;
+    transition: transform 200ms linear; }
+    .event img:hover {
+      transform: scale(1.12); }
+  .event .menu__navbar--underline {
+    text-decoration-line: underline; }
+
+@media only screen and (max-width: 767px) {
+  .event {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+  .event .card__img .img {
+    width: 300px;
+    margin: 15px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .event {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+  .event .card__img .img {
+    width: 500;
+    margin: 15px; } }

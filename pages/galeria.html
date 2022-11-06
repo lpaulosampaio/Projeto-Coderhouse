@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casa Blancah é uma empresa localizada em São Paulo especializada na realização de eventos como festas de casamento, festas de formatura e eventos corporativos">
+    <meta name="keywords" content="Casa Blancah, empresa de eventos, locação de espaço para eventos, organização de eventos, festas de formaturas, festas de casamento, eventos corporativos, eventos híbridos, eventos onlines">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../styles/reset.css">
     <link rel="stylesheet" href="./../styles/main.css">
     <link rel="stylesheet" href="./../styles/galeria.css">
+    <script src="https://kit.fontawesome.com/ba4ece8b89.js" crossorigin="anonymous"></script>
     <title> GALERIA </title>
 </head>
 <body>
     <div class="container"></div>
         <heander class="menu">
             <div class="menu__wrapper">
-                <img class="menu__logo" src="./../image/logo.svg" alt="logo">
+                <a href="../index.html"><img class="menu__logo" src="../image/logo.svg" alt="logo"></a>
                 <nav class="menu__navbar">
-                    <a class="menu__navbar-underline" href="./../index.html">HOME</a>
+                    <a href="./../index.html">HOME</a>
                     <a href="./../pages/Eventos.html">EVENTOS</a>
-                    <a href="./Galeria.html">GALERIA</a>
-                    <a href="./../pages/Sobrenós.html">SOBRE NÓS</a>
+                    <a class="menu__navbar--underline" href="./Galeria.html">GALERIA</a>
+                    <a href="./../pages/Sobrenós.html">SOBRE</a>
                     <a class="menu__navbar-border" href="./../pages/Contato.html">CONTATO</a>
+                </nav>
+                <nav class="menu__navbar__mobile">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="./../index.html">HOME</a></li>
+                        <li><a href="./../pages/Eventos.html">EVENTOS</a></li>
+                        <li><a href="./Galeria.html">GALERIA</a></li>
+                        <li><a href="./../pages/Sobrenós.html">SOBRE</a></li>
+                        <li><a href="./../pages/Contato.html">CONTATO</a></li>
+                    </ul>
                 </nav>
             </div>
         </heander><hr> 
@@ -30,41 +46,41 @@
     <main>
         <section class="galeria__images">
 
-            <div class="img">
-                <img class="" src="./../image/galeria/1.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/1.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/2.png" alt="img" height="150" width="250" >
+            <div>
+                <img class="img__galeria" src="./../image/galeria/2.png" alt="img"  >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/3.jpg" alt="img" height="150" width="250" >
+            <div>
+                <img class="img__galeria" src="./../image/galeria/3.jpg" alt="img"  >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/4.jpg" alt="img"height="150" width="250" >
+            <div>
+                <img class="img__galeria" src="./../image/galeria/4.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/5.png" alt="img" height="150" width="250" >
+            <div>
+                <img class="img__galeria" src="./../image/galeria/5.png" alt="img"  >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/6.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/6.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/7.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/7.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/8.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/8.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/9.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/9.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/10.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/10.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/11.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/11.jpg" alt="img" >
             </div>
-            <div class="img">
-                <img class="" src="./../image/galeria/12.jpg" alt="img" height="150" width="250">
+            <div>
+                <img class="img__galeria" src="./../image/galeria/12.jpg" alt="img" >
             </div>
 
 
@@ -73,17 +89,18 @@
     </main>
         
     <footer class="footer">
-            <hr> 
-            <div class="footer__icons">
-                <a href="https://www.facebook.com/"><img src="./../image/logo_facebook.svg" alt="facebook"></a>
-                <a href="https://www.youtube.com/"><img src="./../image/logo_youtube.svg" alt="youtube"></a>
-                <a href="https://www.instagram.com/"><img src="./../image/logo_instagram.svg" alt="instagram"></a>
-            </div>
-            <div class="footer__title">
-                <p class="footer__2022">2022. Direitos Reservados </p> <br>
-                <p class="footer__right"> Copyright - Casa Blancah - Espaço para Casamentos e Eventos.<br>
-                São Paulo. Site por Creative Design.</p>
-            </div>
+        <hr>
+        <div class="footer__icons">
+            <a href="https://www.facebook.com/"><img class="img_icon" src="../image/logo_facebook.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/"><img  class="img_icon"  src="../image/logo_youtube.svg" alt="youtube"></a>
+            <a href="https://www.instagram.com/"><img class="img_icon"  src="../image/logo_instagram.svg" alt="instagram"></a>
+        </div>
+        <div class="footer__title">
+            <p class="footer__2022">Casa Blancah - Todos os direitos reservados</p> 
+            <p class="footer__right"> Copyright - Espaço para Casamentos e Eventos.<br>
+                São Paulo. Site criado por Creative Design.</p>
+        </div>
     </footer>
+</div>
 </body>
 </html>

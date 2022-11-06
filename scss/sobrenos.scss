@@ -5,9 +5,16 @@
     align-items: center;
     margin: 40px 0;
 
+    .video{
+        width: 1000px;
+    }
+
     p{
         margin: 50px 0; 
-        font-size: 16px;
+        font-size: 20px;
+        font-weight: 5;
+        line-height: 35px;
+        
     }
 
     .content__text{
@@ -15,12 +22,113 @@
         text-align: center;
     }
     
-    .btn{
-        padding: 4px 5px;
-        
+    .btn__about{
+        width: 200px;
+        cursor: pointer;
+        transition: transform 100ms cubic-bezier(.45,.97,.68,2.48);
+
+         &:hover{
+            border: 2px solid #afafaf;
+            border-radius: 5px;
+            transform: scale(1.1);
+            
+         }
+    }
+
+    .img__about{
+        cursor: pointer;
+        transition: transform 100ms linear;
+
+         &:hover{
+            transform: scale(1.1);
+              
+         }
+    }
+
+    .content__about{
+        display: flex;
+        align-items: center;
+        margin: 40px 0;
+        justify-content: center;
+
+        & > img{
+            width: 315px;
+            height: 250px;
+            margin: 25px;
+        }
     }
 
 }
 
 
+/*MOBILE*/
 
+@media only screen and (max-width: 767px){
+
+    .banner__about .banner__video .video{
+        width: 350px;
+    }
+    
+    .banner__about .content__text p{
+        margin: 35px 0; 
+        font-size: 12px;
+        font-weight: 10;
+        line-height: 30px;
+    }
+
+    .banner__about .content__text{
+        width: 350px;
+    }
+
+    .banner__about .content__text .btn{
+        padding: 2px 3px;
+        &:hover{
+            color: #afafaf;
+        }
+    }
+
+    .banner__about .content__text .content__about img{
+        margin: 25px;
+    }
+
+    .content__about{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) and 
+(max-width: 1023px) {
+
+    .banner__about .banner__video .video{
+        width: 800px;
+    }
+    
+    .banner__about .content__text p{
+        margin: 35px 0; 
+        font-size: 16px;
+        font-weight: 10;
+        line-height: 30px;
+    }
+
+    .banner__about .content__text{
+        width: 700px;
+    }
+
+    .banner__about .content__text .btn{
+        padding: 2px 3px;
+        &:hover{
+            color: #afafaf;
+        }
+    }
+
+    .banner__about .content__text .content__about img{
+        margin: 25px;
+    }
+
+    .content__about{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -17,6 +17,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .menu .menu__navbar__mobile {
+    display: none; }
   .menu .menu__wrapper {
     display: flex;
     justify-content: space-between;
@@ -31,14 +33,14 @@ a {
       margin-left: 2rem;
       color: #2c2c2c; }
     .menu .menu__navbar > a:hover {
-      color: #afafaf; }
+      color: #afafaf;
+      border-radius: 5px;
+      zoom: 110%;
+      transition: transform 200ms; }
     .menu .menu__navbar > .menu__navbar-border:hover {
-      background-color: #58391D;
-      color: white; }
-  .menu .menu__navbar--border {
-    border: 2px solid #58391D;
-    border-radius: 2px;
-    padding: 1px 4px; }
+      background-color: #2c2c2c;
+      color: white;
+      padding: 2px 4px; }
   .menu .menu__navbar--underline {
     text-decoration-line: underline; }
 
@@ -63,17 +65,11 @@ main {
       letter-spacing: -0.08em;
       margin-bottom: 20px; }
     main .banner__main .banner__main__subtitle {
-      font-size: 28px;
-      font-weight: 100;
+      font-size: 26px;
+      font-weight: 10;
       text-align: center;
       line-height: 45px;
       margin-bottom: 30px; }
-    main .banner__main .main__subtitle-small-letter {
-      font-size: 18px;
-      font-weight: 80; }
-    main .banner__main .main__subtitle-big-letter {
-      font-size: 33px;
-      font-weight: 100; }
     main .banner__main .banner__image {
       background-image: url(./../image/home/casamento.jpg);
       background-repeat: no-repeat;
@@ -84,28 +80,140 @@ main {
       align-items: flex-start;
       padding: 8px 25px;
       gap: 5.48px;
-      background-color: #d9d9d9;
+      background-color: #FCFDFE;
       border: 0.49187px solid rgba(217, 217, 217, 0.73);
       border-radius: 5px;
       text-align: center;
       color: #1b1919;
       font-weight: 350;
-      letter-spacing: 0.1em; }
+      letter-spacing: 0.1em;
+      cursor: pointer; }
     main .banner__main .banner__main__botton:hover {
-      background-color: #505050c0;
-      color: #F2F2F2; }
+      background-color: #E4E7EC;
+      color: black;
+      transform: scale(1.1); }
 
-/*FOOTER*/
 .footer {
   width: 100%;
-  background-color: #EBEBEB;
+  background-color: #FFFFFF;
   text-align: center;
   padding-bottom: 5px; }
+  .footer .footer__icons {
+    margin-top: 14px;
+    margin-bottom: 6px; }
+  .footer .footer__title {
+    line-height: 20px; }
   .footer .footer__2022 {
     font-size: 12px;
-    letter-spacing: 0.11em;
     font-weight: 125; }
   .footer .footer__right {
     font-size: 12px;
+    font-weight: 100; }
+
+@media only screen and (max-width: 767px) {
+  .menu__wrapper .menu__navbar__mobile {
+    display: flex; }
+  .menu__navbar__mobile .checkbtn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer; }
+  #check {
+    display: none; }
+  #check:checked ~ ul {
+    left: 0; }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #afafaf;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+  .menu__navbar__mobile ul li {
+    margin: 50px 0;
+    line-height: 30px; }
+  .menu__navbar__mobile ul li {
+    font-size: 20px;
+    font-weight: 10;
+    cursor: pointer; }
+  .menu__navbar__mobile ul li a:hover {
+    color: #FFFFFF;
+    border-radius: 5px;
+    zoom: 105%; }
+  .menu__navbar__mobile ul li a:active {
+    color: #FFFFFF;
+    border-radius: 5px;
+    zoom: 105%; }
+  .menu__navbar__mobile ul li a {
+    color: #1b1919; }
+  .menu__navbar {
+    display: none; }
+  .home {
+    background-image: url(./../image/home/casamento.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .banner__image {
+    display: none; }
+  .banner__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+  .banner__main .banner__text .banner__main__title {
+    font-size: 24px;
+    color: #58391D;
+    font-weight: 70;
+    text-decoration-line: underline;
+    letter-spacing: -0.08em;
+    margin-bottom: 20px; }
+  .banner__main .banner__text .banner__main__subtitle {
+    font-size: 20px;
     font-weight: 100;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 30px; }
+  .banner__main .banner__text .main__subtitle-small-letter {
+    font-size: 20px;
+    font-weight: 80; }
+  .banner__main .banner__text .main__subtitle-big-letter {
+    font-size: 20px;
+    font-weight: 100; }
+  .banner__main .banner__text .banner__main__botton {
+    display: flex;
+    align-items: flex-start;
+    padding: 6px 18px;
+    gap: 5.48px;
+    background-color: #d9d9d9;
+    border: 0.3px solid rgba(217, 217, 217, 0.73);
+    border-radius: 5px;
+    text-align: center;
+    color: #2c2c2c;
+    font-weight: 300;
     letter-spacing: 0.1em; }
+  .footer__icons {
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .img_icon {
+    width: 25px;
+    height: 25px; }
+  .footer__title {
+    line-height: 20px; }
+  .footer__2022 {
+    font-size: 8px;
+    font-weight: 10;
+    letter-spacing: none; }
+  .footer__right {
+    flex-direction: row;
+    font-size: 8px;
+    font-weight: 10;
+    letter-spacing: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner__main .banner__text .banner__main__subtitle {
+    font-size: 18px;
+    font-weight: 80;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 30px; } }

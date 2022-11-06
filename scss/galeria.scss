@@ -2,8 +2,22 @@
 .galeria__images{
     display: flex;
     justify-content: space-evenly;
-    gap: 35px;
+    gap: 30px;
     flex-wrap: wrap;
-    margin: 40px 150px;
-    margin-bottom: 26px;
+    margin: 40px 100px;
+    margin-bottom: 35px;
+
+    .img__galeria{
+        width: 250px;
+        height: 200px;
+        transition: transform 100ms linear;
+    
+            &:hover{
+            transform: scale(1.12);    
+        }
+    }
+
+    .menu__navbar--underline{
+        text-decoration-line: underline;
+    }
 }

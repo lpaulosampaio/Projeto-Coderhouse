@@ -26,8 +26,9 @@ main{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 7px;
         color: #FFFFFF;
-        font-weight: 70;
+        font-weight: 40;
         padding: 3rem 0;
+        line-height: 35px;
         
         
         h1{
@@ -88,3 +89,78 @@ main{
         }
     }
 
+@media only screen and (max-width: 767px) {
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__main .banner__wrapper .banner__location{
+        text-align: center;
+        width: 500px;
+        height: min-content ;
+        background: rgba(61, 58, 58, 0.65);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        color: #FFFFFF;
+        font-weight: 50;
+        padding: 2rem 5rem;
+        margin: 25px 0 ;
+        line-height: 25px;
+            h1{
+                text-transform: uppercase;
+                font-size: 25;
+                margin-bottom: 2rem;
+        }
+            p{
+                font-size: 18px;
+        }
+    }
+
+    .banner__wrapper, .container__form {
+        width: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and 
+(max-width: 1023px) {
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__main .banner__wrapper .banner__location{
+        text-align: center;
+        width: 500px;
+        height: min-content ;
+        background: rgba(61, 58, 58, 0.65);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        color: #FFFFFF;
+        font-weight: 50;
+        padding: 2rem 5rem;
+        margin: 25px 0 ;
+        line-height: 25px;
+            h1{
+                text-transform: uppercase;
+                font-size: 25;
+                margin-bottom: 2rem;
+        }
+            p{
+                font-size: 18px;
+        }
+    }
+
+    .banner__wrapper, .container__form {
+        width: none;
+    }
+
+
+
+}

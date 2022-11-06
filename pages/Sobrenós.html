@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casa Blancah é uma empresa localizada em São Paulo especializada na realização de eventos como festas de casamento, festas de formatura e eventos corporativos">
+    <meta name="keywords" content="Casa Blancah, empresa de eventos, locação de espaço para eventos, organização de eventos, festas de formaturas, festas de casamento, eventos corporativos, eventos híbridos, eventos onlines">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../styles/reset.css">
     <link rel="stylesheet" href="./../styles/main.css">
     <link rel="stylesheet" href="./../styles/sobrenos.css">
+    <script src="https://kit.fontawesome.com/ba4ece8b89.js" crossorigin="anonymous"></script>
     <title> SOBRE NÓS </title>
 </head>
 <body>
     <div class="container"></div>
         <heander class="menu">
             <div class="menu__wrapper">
-                <img class="menu__logo" src="./../image/logo.svg" alt="logo">
+                <a href="../index.html"><img class="menu__logo" src="../image/logo.svg" alt="logo"></a>
                 <nav class="menu__navbar">
-                    <a class="menu__navbar-underline" href="./../index.html">HOME</a>
+                    <a href="./../index.html">HOME</a>
                     <a href="./../pages/Eventos.html">EVENTOS</a>
                     <a href="./../pages/Galeria.html">GALERIA</a>
-                    <a href="./Sobrenós.html">SOBRE NÓS</a>
+                    <a class="menu__navbar--underline" href="./Sobrenós.html">SOBRE</a>
                     <a class="menu__navbar-border" href="./../pages/Contato.html">CONTATO</a>
+                </nav>
+                <nav class="menu__navbar__mobile">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="./../index.html">HOME</a></li>
+                        <li><a href="./../pages/Eventos.html">EVENTOS</a></li>
+                        <li><a href="./../pages/Galeria.html">GALERIA</a></li>
+                        <li><a href="./Sobrenós.html">SOBRE</a></li>
+                        <li><a href="./../pages/Contato.html">CONTATO</a></li>
+                    </ul>
                 </nav>
             </div>
         </heander><hr> 
 
        <main>
         <section class="banner__about">
-            <div class="banner__video"></div>
-            <video autoplay loop muted>  
+            <div class="banner__video">
+            <video class="video" autoplay loop muted>  
                 <source src="./../video/videonoivas.mp4" type="video/mp4">
             </video>
             </div>
@@ -39,27 +55,30 @@
                 <p> Arquitetura contemporânea, a casa, localizada no bairro da bela vista na cidade de São Paulo, é baseada em três princípios: bom gosto, sofisticação e integração com a natureza. </p>
                 <p>Possui jardim externo, que pode ser visto de qualquer ângulo do salão principal, além de deixar o local ainda mais harmonioso para a realização de diversos tipos de eventos como casamentos, Festa de 15 anos, Festas de aniversários, Formaturas e Eventos Corporativos.</p>
                 <a href="#">
-                    <button class="banner__main__botton btn">RESERVAS</button>
+                    <img class="btn__about" src="../image/sobre_nos/btn.svg">
                 </a>
+            <div class="content__about">    
+                <img class="img__about" src="../image/sobre_nos/1.svg">
+                <img class="img__about" src="../image/sobre_nos/2.svg">
+                <img class="img__about" src="../image/sobre_nos/3.svg">
+            </div>
+               
             </div>
         </section>
-
-
-
-
        </main>
-        <footer class="footer">
-            <hr> 
-            <div class="footer__icons">
-                <a href="https://www.facebook.com/"><img src="./../image/logo_facebook.svg" alt="facebook"></a>
-                <a href="https://www.youtube.com/"><img src="./../image/logo_youtube.svg" alt="youtube"></a>
-                <a href="https://www.instagram.com/"><img src="./../image/logo_instagram.svg" alt="instagram"></a>
-            </div>
-            <div class="footer__title">
-                <p class="footer__2022">2022. Direitos Reservados </p> <br>
-                <p class="footer__right"> Copyright - Casa Blancah - Espaço para Casamentos e Eventos.<br>
-                São Paulo. Site por Creative Design.</p>
-            </div>
-        </footer>
+       <footer class="footer">
+        <hr>
+        <div class="footer__icons">
+            <a href="https://www.facebook.com/"><img class="img_icon" src="../image/logo_facebook.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/"><img  class="img_icon"  src="../image/logo_youtube.svg" alt="youtube"></a>
+            <a href="https://www.instagram.com/"><img class="img_icon"  src="../image/logo_instagram.svg" alt="instagram"></a>
+        </div>
+        <div class="footer__title">
+            <p class="footer__2022">Casa Blancah - Todos os direitos reservados</p> 
+            <p class="footer__right"> Copyright - Espaço para Casamentos e Eventos.<br>
+                São Paulo. Site criado por Creative Design.</p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
